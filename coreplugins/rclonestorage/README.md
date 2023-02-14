@@ -19,6 +19,8 @@ The user-specified configuration is not yet being tested extensively. This means
 
 Many common feature of cloud storage is not yet exist, such as listing directory and verifying files.
 
+The folder in remote or cloud storage MUST be only filled by image files.
+
 Currently, this plugin uses only the generic rclone command without any additional flag. Storage-specific way to download, such as link download which uses flag, is not yet supported.
 
 Feel free to contribute to remove these limitation or adding new type of storage-specific download. 
@@ -27,6 +29,14 @@ Feel free to contribute to remove these limitation or adding new type of storage
 Thanks to cloudimport plugin by Nicolas Chamo and dronedb plugin by Luca Di Leo, which i used a lot for reference and template. 
 
 ## Dev Notes
+
+Features that not yet implemented:
+1. Provide multiple choice of storage name instead of typing it in
+2. Add export capabilities
+3. Listing files inside directory and subfolder file search
+4. File selection and filtering
+5. Verify file existance before importing
+Please feel free to contribute to this plugin
 
 Here lies some of my log, design decision, and what i learn during development of this plugin. I hope this note can be beneficial.
 
