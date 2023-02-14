@@ -1,0 +1,14 @@
+{% extends "app/plugins/templates/base.html" %}
+{% load bootstrap_extras %}
+{% block content %}
+<h3>RClone Storage Settings</h3>
+<h5>Instructions</h5>
+<h5>Please READ the readme.md for installation instruction.</h5>
+<h5>Upload your RClone config file to be used. This file can be found by using command 'rclone config file'.</h5>
+
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% include "app/plugins/templates/form.html" %}
+    <button type="submit">Save</button>
+</form>
+{% endblock %}
